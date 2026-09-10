@@ -1,0 +1,138 @@
+/* Revamped CSS for event planner UI */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9f9fc;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  transition: border 0.3s ease;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+  border-color: #7a5af8;
+  outline: none;
+}
+
+button, .button-link {
+  display: inline-block;
+  background-color: #7a5af8;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, .button-link:hover {
+  background-color: #5a3fc0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.event-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+  margin-bottom: 10px;
+  color: #4b3ca7;
+}
+
+.event-card p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.edit-btn, .delete-btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #ffd333;
+  color: #222;
+  margin-right: 10px;
+}
+
+.edit-btn:hover {
+  background-color: #e6bc29;
+}
+
+.delete-btn {
+  background-color: #ff5c5c;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #e04848;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .event-list {
+    padding: 0 10px;
+  }
+}

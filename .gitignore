@@ -1,0 +1,7 @@
+# Ignore the real database connection file to protect passwords
+db.php
+test_db.php
+
+# Ignore system files
+.DS_Store
+Thumbs.db

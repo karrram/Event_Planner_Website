@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #166088;
+            --accent-color: #4fc3f7;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: flex-end;
+            gap: 1.5rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        nav a:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            margin-bottom: 3rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            background-color: white;
+        }
+        
+        .features {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                justify-content: center;
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero {
+                padding: 3rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="signup.html"><i class="fas fa-user-plus"></i> Sign Up</a>
+        <a href="signin.html"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+    </nav>
+    
+    <section class="hero">
+        <h1>Welcome to Event Planner</h1>
+        <p>Plan and manage your events efficiently with our powerful event management tools.</p>
+        <a href="signup.html" class="cta-button">Get Started Now</a>
+    </section>
+    
+    <section class="features">
+        <div class="feature-card">
+            <i class="fas fa-calendar-check"></i>
+            <h3>Easy Scheduling</h3>
+            <p>Create and manage events with our intuitive calendar interface.</p>
+        </div>
+        
+        <div class="feature-card">
+            <i class="fas fa-bell"></i>
+            <h3>Smart Reminders</h3>
+            <p>Never miss an event with our automated notification system.</p>
+        </div>
+        
+        <div class="feature-card">
+            <i class="fas fa-users"></i>
+            <h3>Guest Management</h3>
+            <p>Easily track and manage your event attendees.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Event Planner. All rights reserved.</p>
+    </footer>
+</body>
+</html>
